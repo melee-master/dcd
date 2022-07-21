@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "SynthWave '84",
+    "files.associations": {
+        "*.ejs": "html",
+        "iostream": "cpp",
+        "stack": "cpp",
+        "__node_handle": "cpp",
+        "queue": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

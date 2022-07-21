@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int arr[1005][1005];
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cin>>arr[i][j];
+        }
+    }
+
+    //Transpose: 
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(i>j){
+                swap(arr[i][j], arr[j][i]);
+            }
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        int x=0;
+        int y=n-1;
+        for(int j=0; j<n;j++){
+            if(x<y){
+                swap(arr[x][i], arr[y][i]);
+                x++;
+                y--;
+            }
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+}
